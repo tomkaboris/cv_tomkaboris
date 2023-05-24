@@ -4,6 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: tomkaboris/cv_tomkaboris@v1
+    - uses: tomkaboris/cv_tomkaboris
     - name: cv_tomkaboris
       run: docker build . --file Dockerfile --tag boristomka/cv_tomkaboris
