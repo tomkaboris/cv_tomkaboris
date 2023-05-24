@@ -1,0 +1,18 @@
+name: cv_tomkaboris
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: nginx:alpine
+
+    steps:
+    - uses: boristomka/cv_tomkaboris
+    - name: cv_tomkaboris
+      run: docker build . --file Dockerfile --tag boristomka/cv_tomkaboris
