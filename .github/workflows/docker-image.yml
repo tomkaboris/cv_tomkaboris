@@ -1,17 +1,8 @@
 name: cv_tomkaboris
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+on: [push]
 jobs:
-
   build:
-
     runs-on: nginx:alpine
-
     steps:
     - uses: tomkaboris/cv_tomkaboris@v1
     - name: cv_tomkaboris
