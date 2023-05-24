@@ -1,4 +1,4 @@
-# cv_tomkaboris
+# CV Tomka Boris
 "OPPORTUNITY DON'T HAPPEN, YOU CREATE THEM"
 
 This repository is created to present my resume for employment opportunities. 
