@@ -2,7 +2,7 @@ name: cv_tomkaboris
 on: [push]
 jobs:
   build:
-    runs-on: nginx:alpine
+    runs-on: ubuntu-latest
     steps:
     - uses: tomkaboris/cv_tomkaboris@v1
     - name: cv_tomkaboris
