@@ -27,4 +27,4 @@ jobs:
       - name: Push Docker image
         run: |
           docker tag cv_tomkaboris ${{ secrets.DOCKERHUB_USERNAME }}/cv_tomkaboris
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/cv_tomkaboris::latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/cv_tomkaboris:latest
