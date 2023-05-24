@@ -22,7 +22,7 @@ jobs:
           
       - name: Build Docker image
         run: |
-          docker build -t boristomka/cv_tomkaboris .
+          docker build . -t boristomka/cv_tomkaboris
           
       - name: Push Docker image
         run: |
