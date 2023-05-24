@@ -13,6 +13,6 @@ jobs:
     runs-on: nginx:alpine
 
     steps:
-    - uses: boristomka/cv_tomkaboris@v1
+    - uses: tomkaboris/cv_tomkaboris@v1
     - name: cv_tomkaboris
       run: docker build . --file Dockerfile --tag boristomka/cv_tomkaboris
