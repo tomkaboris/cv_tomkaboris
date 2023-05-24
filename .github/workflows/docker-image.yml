@@ -26,5 +26,5 @@ jobs:
           
       - name: Push Docker image
         run: |
-          docker tag cv_tomkaboris:latest ${{ env.DOCKER_USERNAME }}/cv_tomkaboris:latest
-          docker push ${{ env.DOCKER_USERNAME }}/cv_tomkaboris:latest
+          docker tag cv_tomkaboris:latest ${{ env.DOCKER_USERNAME }}/cv_tomkaboris
+          docker push ${{ env.DOCKER_USERNAME }}/cv_tomkaboris
