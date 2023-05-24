@@ -22,9 +22,9 @@ jobs:
           
       - name: Build Docker image
         run: |
-          docker build . -t boristomka/cv_tomkaboris
+          docker build . -t ${{ secrets.DOCKERHUB_USERNAME }}/cv_tomkaboris
           
       - name: Push Docker image
         run: |
-          docker tag cv_tomkaboris boristomka/cv_tomkaboris
-          docker push boristomka/cv_tomkaboris
+          docker tag cv_tomkaboris ${{ secrets.DOCKERHUB_USERNAME }}/cv_tomkaboris
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/cv_tomkaboris
