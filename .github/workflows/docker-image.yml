@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: boristomka/cv_tomkaboris:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/cv_tomkaboris:latest
