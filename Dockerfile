@@ -1,17 +1,11 @@
-FROM ubuntu 
+FROM nginx:alpine
 
-RUN apt update
-RUN apt install -y apache2 
-RUN apt install -y apache2-utils 
-RUN apt install -y vim
-RUN apt install python3-pip -y
+RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
+RUN apk update && apk add python3-dev gcc libc-dev
+RUN python3 -m ensurepip
+RUN pip3 install bs4
+RUN pip3 install requests
 
-RUN pip install bs4
-RUN pip install requests
+COPY . /usr/share/nginx/html
 
-COPY . /var/www/html/
-
-RUN cd /var/www/html && python3 fetchdata.py
-
-CMD ["apache2ctl", "-D", "FOREGROUND"]
-
+RUN cd /usr/share/nginx/html && python3 fetchdata.py
