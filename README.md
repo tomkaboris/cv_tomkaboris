@@ -13,4 +13,4 @@ M1/M2 Mac
 docker run -p 80:80 -d --platform linux/x86_64/v8 boristomka/cv_tomkaboris
 ```
 
-On the repository is setup GitHub Action and all updates will build and push to the Docker Hub image automatically.
+On the repository is setup GitHub Action and all updates will perform build, test and push to the Docker Hub image automatically.
