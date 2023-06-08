@@ -37,5 +37,5 @@ jobs = [{ 'position': items, 'demand': values } for items, values in zip(items, 
 json_object = json.dumps(jobs, indent=8)
 
 # Writing to sample.json
-with open("jobs.json", "w") as outfile:
+with open("/usr/share/nginx/html/jobs.json", "w") as outfile:
     outfile.write(json_object)
