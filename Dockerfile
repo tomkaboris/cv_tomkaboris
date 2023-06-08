@@ -8,4 +8,4 @@ RUN pip3 install requests
 
 COPY . /usr/share/nginx/html
 
-RUN cd /usr/share/nginx/html && python3 fetchdata.py
+RUN python /usr/share/nginx/html/fetchdata.py
